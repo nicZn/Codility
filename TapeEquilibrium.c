@@ -8,7 +8,7 @@ int solution(int A[], int N) {
     }
     
     int *sum;
-    sum = (int *)realloc(0, sizeof(int) * N);
+    sum = (int *)calloc(N, sizeof(int));
     
     int singleSum = 0;
     for (int i = 0; i < N ; i ++) {
